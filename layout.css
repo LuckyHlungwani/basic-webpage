@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(184, 153, 160);
+}
+
+.container {
+    border: 1em solid brown;
+    border-radius: 2em;
+    text-align: center;
+}

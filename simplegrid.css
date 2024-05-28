@@ -1,0 +1,14 @@
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.container-fluid {
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+  display: grid;
+}
+
+.container {
+  display: ;
+}
