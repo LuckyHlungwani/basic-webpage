@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(/public/web-design-2906159_1280.jpg);
+    background-image: url(./web.jpg);
     background-size: cover;
     background-position: center;
 }
