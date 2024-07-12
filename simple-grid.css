@@ -9,30 +9,24 @@
 
 html,
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  top: 0;
-  font-size: 100%;
-  background-color: rgb(100, 237, 152);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(52, 184, 224);
+  margin: auto;
+  padding: auto;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* ROOT FONT STYLES */
 
-* {
-  font-family: 'Lato', Helvetica, sans-serif;
-  color: #101011;
-  line-height: 1.5;
- 
-
-}
-
-/* .col-4 {
-  background-image: url(images/Mountain.jpg);
+#intro {
+  background: url('public/mountain.webp');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-} */
+}
 
 /* TYPOGRAPHY */
 
@@ -132,6 +126,12 @@ p {
   width: 96%;
 }
 
+.col-12 th, .col-12 td {
+  border: 1px solid #000000;
+  padding: 5px;
+  text-align: left;
+}
+
 .col-1-sm {
   width: 4.33%;
 }
@@ -154,6 +154,7 @@ p {
 
 .col-6-sm {
   width: 46%;
+  display: inline-block;
 }
 
 .col-7-sm {
@@ -177,17 +178,30 @@ p {
 }
 
 .col-12-sm {
-  width: 96%;
+  width: 100%;
+  
 }
 
 .row::after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .hidden-sm {
   display: none;
+}
+
+#desktopPic {
+  display: none;
+}
+
+#mobilePic {
+  display: inline-block;
+}
+
+.myFooter {
+  margin-top: 60px;
 }
 
 @media only screen and (min-width: 33.75em) {  /* 540px */
@@ -255,4 +269,30 @@ p {
     width: 75%;
     max-width: 60rem;
   }
+  #mobilePic {
+    display: none;
+  }
+
+  #desktopPic {
+    display: inline-block;
+  }
+}
+
+/* SUBJECT IMAGES */
+
+.subject-image-container {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.subject-image {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.subject-image:hover {
+  transform: scale(1.05);
 }

@@ -1,0 +1,350 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(240, 58, 45);
+    margin: auto;
+    padding: auto;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2em;
+    padding: 2px;
+    margin-top: 2em;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.my-section{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background: url('cpt.jpg') no-repeat center/cover;
+
+}
+
+.overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+}
+
+
+.my-pic{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin-bottom: 20px;
+}
+    
+
+.my-details{
+    max-width: 600px;
+}
+
+.my-details h1 {
+    margin: 0;
+    font-size: 2em;  
+margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .overlay {
+        flex-direction: row;
+       justify-content: flex-end;
+       align-items: center;
+    }
+    
+    .my-pic{
+        margin-right: 20px;
+        order: -1;
+    }
+    .my-details{
+       text-align: center;
+       
+    }
+}
+
+.h1 {
+    margin: 0;
+    font-size: 2em;  
+    margin-bottom: 10px;
+    color: rgba(175, 161, 8, 0.926);
+}
+
+.hh {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;  
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+/* fav-lingo*/
+
+
+
+.lingo-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.lingo-table th, .lingo-table td {
+    border: 4px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.lingo-table th {
+    background-color: #0bad62;
+    color: black;
+}
+.lingo-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.lingo-table tr:hover {
+    background-color: #ddd;
+}
+/* favourite city */
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item{
+    /* text-align: center; */
+    max-width: 100%;
+    display: flex;
+}
+
+.gallery-item img {
+    width: 40%;
+    /* height: 50%; */
+  
+    /* max-width: 40%; */
+}
+
+.gallery-item p{
+    margin-top: 10px;
+    font-size: 16px;
+    /* text-align: center; */
+    padding: 1em;
+}
+
+/* .gallery-item:hover img{
+    transform: scale(1.05);
+} */
+
+/* This is for historical places */
+.image-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(33.333% - 20px);
+    overflow: hidden;
+}
+
+.image-item img {
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+
+.image-item:hover img{
+    transform: scale(1.1);
+}
+
+.text-content {
+    text-align: center;
+}
+
+.text-content h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+@media (max-width: 1024px){
+    .image-item{
+        flex: 1 1 calc(50% -20px);
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-item img {
+    
+        margin-bottom: 10px;
+       
+    }
+    .text-content {
+        text-align: center;
+    }
+    .gallery-item {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 2em;
+
+    }
+    .gallery-item img {
+        width: 300px;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .image-item{
+        flex: 1 1 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .image-item.reverse{
+        flex-direction: row-reverse;
+    }
+
+    .image-item img {
+        max-width: 150px;
+        margin: 0 20px 0 0;
+    }
+    .image-item.reverse img {
+        margin: 0 0 0 20px;
+    }
+
+    .text-content {
+       text-align: left;
+    }
+
+    .image-item.reverse .text-content {
+        text-align: right;
+    }
+
+}
+
+
+
+/*profile pictue */
+
+.my-section{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background: url('./public/mountain.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+}
+
+
+.my-pic{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin-bottom: 20px;
+}
+    
+
+.my-details{
+    max-width: 600px;
+}
+
+.my-details h1 {
+    margin: 0;
+    font-size: 2em;  
+margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .overlay {
+        flex-direction: row;
+       justify-content: flex-end;
+       align-items: center;
+    }
+    
+    .my-pic{
+        margin-right: 20px;
+        order: -1;
+    }
+    .my-details{
+       text-align: center;
+       
+    }
+}
+
+.h1 {
+    margin: 0;
+    font-size: 2em;  
+    margin-bottom: 10px;
+    color: rgba(175, 161, 8, 0.926);
+}
+
+.hh {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;  
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* For the other HTML*/
+
+.butContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.flexButton{
+    margin-bottom: 15px;
+}
+
+.gridButtton{
+    margin-bottom: 15px;
+}
+
+/* .bodyBackground{
+    color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+} */
+
+.container {
+    width: 90%;
+    max-width: 1200px; 
+    margin: 2em auto; 
+    padding: 20px;
+    background-color: #10d483; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+}
+#Text{
+    text-align: center;
+}
